@@ -1,4 +1,5 @@
-function formatDate(date) {
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
   let days = [
     "Sunday",
     "Monday",
@@ -36,11 +37,10 @@ function showWeather(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     3.6 * response.data.wind.speed
   );
+  document.querySelector("#date").innerHTML = formatDate(
+    response.data.dt * 1000
+  );
 }
-
-let timeElement = document.querySelector("#date");
-let currentTime = new Date();
-timeElement.innerHTML = formatDate(currentTime);
 
 let apiKey = "b409f6a940ab5609bc1ca05aa3fc68e6";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=hamburg&appid=${apiKey}&units=metric `;
