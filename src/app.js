@@ -1,3 +1,26 @@
+function formatDate(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${hours}`;
+  }
+
+  return `${day} | ${hours}:${minutes}`;
+}
+
 function showWeather(response) {
   console.log(response.data);
 
@@ -14,6 +37,10 @@ function showWeather(response) {
     3.6 * response.data.wind.speed
   );
 }
+
+let timeElement = document.querySelector("#date");
+let currentTime = new Date();
+timeElement.innerHTML = formatDate(currentTime);
 
 let apiKey = "b409f6a940ab5609bc1ca05aa3fc68e6";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=hamburg&appid=${apiKey}&units=metric `;
