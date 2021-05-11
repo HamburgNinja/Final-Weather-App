@@ -31,7 +31,6 @@ a {
 
 hr {
   color: #536770;
-  width: 570px;
 }
 
 footer {
@@ -61,18 +60,6 @@ footer {
   color: #4787a7;
 }
 
-.current-temp {
-  text-align: left;
-  font-size: 45px;
-  font-weight: 600;
-}
-
-.current-weather {
-  margin-top: 18px;
-  font-size: 30px;
-  font-weight: 300;
-}
-
 .units {
   top: -18px;
   position: relative;
@@ -81,4 +68,16 @@ footer {
 
 #date {
   padding-left: 20px;
+}
+
+#current-temp {
+  text-align: left;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+#current-weather {
+  margin-top: 18px;
+  font-size: 30px;
+  font-weight: 300;
 }

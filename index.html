@@ -16,29 +16,35 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <title>Weather-App</title>
   </head>
   <body>
     <div class="container">
       <div class="frame-wrapper">
         <div class="frame">
-          <h1>Hamburg, Germany</h1>
+          <h1><span id="city"></span> <span id="country"></span></h1>
           <p id="date">Friday | 12:21</p>
           <div class="row current-weather-details">
             <div class="col-2">
               <span class="current-weather-icon">🌦</span>
             </div>
             <div class="col-3">
-              <span class="current-temp">8</span>
+              <span id="current-temp"></span>
               <span class="units">°C | <a href="#">°F</a></span>
             </div>
-            <div class="col-7 current-weather">mostly cloudy</div>
+            <div class="col-7" id="current-weather"></div>
           </div>
           <hr />
           <div class="row">
             <div class="col-4 text-center">Precipitation: 45%</div>
-            <div class="col-4 text-center">Humidity: 70%</div>
-            <div class="col-4 text-center">Wind: 19 km/h</div>
+            <div class="col-4 text-center">
+              Humidity: <span id="humidity"></span>%
+            </div>
+            <div class="col-4 text-center">
+              Wind: <span id="wind"></span> km/h
+            </div>
           </div>
         </div>
         <footer>
