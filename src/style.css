@@ -38,7 +38,7 @@ footer {
   font-size: 14px;
 }
 
-.frame-wrapper {
+.frameWrapper {
   width: 100%;
   max-width: 600px;
   margin: 20px auto;
@@ -48,16 +48,6 @@ footer {
   padding: 10px;
   border: 2px solid #5f9ea0;
   border-radius: 5px;
-}
-
-.current-weather-details {
-  margin: 20px 0 0;
-}
-
-.current-weather-icon {
-  padding-left: 20px;
-  font-size: 50px;
-  color: #4787a7;
 }
 
 .units {
@@ -70,6 +60,15 @@ footer {
   padding-left: 20px;
 }
 
+#current-weather-details {
+  margin: 20px 0 0;
+}
+
+#current-weather-icon {
+  padding-left: 20px;
+  font-size: 50px;
+  color: #4787a7;
+}
 #current-temp {
   text-align: left;
   font-size: 45px;
