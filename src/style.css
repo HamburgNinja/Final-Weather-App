@@ -29,12 +29,18 @@ a {
   color: #5f9ea0;
 }
 
+hr {
+  color: #536770;
+  width: 570px;
+}
+
 footer {
   margin-top: 15px;
   font-size: 14px;
 }
 
 .frame-wrapper {
+  width: 100%;
   max-width: 600px;
   margin: 20px auto;
 }
@@ -46,7 +52,7 @@ footer {
 }
 
 .current-weather-details {
-  margin: 20px 0;
+  margin: 20px 0 0;
 }
 
 .current-weather-icon {
@@ -64,6 +70,7 @@ footer {
 .current-weather {
   margin-top: 18px;
   font-size: 30px;
+  font-weight: 300;
 }
 
 .units {
@@ -73,6 +80,5 @@ footer {
 }
 
 #date {
-  left: 20px;
-  position: relative;
+  padding-left: 20px;
 }
