@@ -24,6 +24,21 @@
     <div class="container">
       <div class="frameWrapper">
         <div class="frame">
+          <form id="search-form" class="mt-3">
+            <div class="row">
+              <div class="col-10">
+                <input
+                  type="search"
+                  placeholder="Enter city"
+                  class="form-control"
+                  id="search-input"
+                />
+              </div>
+              <div class="col-2">
+                <input type="submit" value="search" class="btn submit-btn" />
+              </div>
+            </div>
+          </form>
           <h1><span id="city"></span> <span id="country"></span></h1>
           <p id="date"></p>
           <div class="row" id="current-weather-details">

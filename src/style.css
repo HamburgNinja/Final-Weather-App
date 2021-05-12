@@ -56,6 +56,11 @@ footer {
   font-size: 16px;
 }
 
+.submit-btn {
+  color: #fff;
+  background: #5f9ea0;
+}
+
 #date {
   padding-left: 20px;
 }

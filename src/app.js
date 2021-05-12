@@ -23,8 +23,6 @@ function formatDate(timestamp) {
 }
 
 function showWeather(response) {
-  console.log(response.data);
-
   let weatherIcon = document.querySelector("#current-weather-icon");
   document.querySelector("#current-temp").innerHTML = Math.round(
     response.data.main.temp
@@ -48,7 +46,19 @@ function showWeather(response) {
   weatherIcon.setAttribute("alt", response.data.weather[0].description);
 }
 
-let apiKey = "b409f6a940ab5609bc1ca05aa3fc68e6";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=hamburg&appid=${apiKey}&units=metric `;
+function search(city) {
+  let apiKey = "b409f6a940ab5609bc1ca05aa3fc68e6";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric `;
+  axios.get(apiUrl).then(showWeather);
+}
 
-axios.get(apiUrl).then(showWeather);
+function handleSubmit(event) {
+  event.preventDefault();
+  let searchInputElement = document.querySelector("#search-input");
+  search(searchInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+search("Hamburg");
