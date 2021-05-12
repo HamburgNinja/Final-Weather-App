@@ -65,10 +65,9 @@ footer {
 }
 
 #current-weather-icon {
-  padding-left: 20px;
-  font-size: 50px;
-  color: #4787a7;
+  width: 70px;
 }
+
 #current-temp {
   text-align: left;
   font-size: 45px;
