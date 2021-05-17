@@ -28,8 +28,7 @@ function showWeather(response) {
     response.data.main.temp
   );
   document.querySelector("#city").innerHTML = response.data.name;
-  document.querySelector("#country").innerHTML =
-    "(" + response.data.sys.country + ")";
+  document.querySelector("#country").innerHTML = response.data.sys.country;
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;

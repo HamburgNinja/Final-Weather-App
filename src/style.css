@@ -70,6 +70,28 @@ footer {
   text-decoration: none;
 }
 
+.weather-forecast {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.weather-forecast-day {
+  color: #5f9ea0;
+  font-weight: 600;
+}
+
+.weather-forecast-temp {
+  font-size: 14px;
+}
+
+.weather-forecast-temp-max {
+  font-weight: 600;
+}
+
+.weather-forecast-temp-min {
+  opacity: 0.6;
+}
+
 #date {
   padding-left: 20px;
 }
