@@ -50,10 +50,17 @@ footer {
   border-radius: 5px;
 }
 
-.units {
+.unit {
   top: -18px;
   position: relative;
   font-size: 16px;
+}
+
+.weather-details {
+  margin-top: 10px;
+  padding: 6px 0;
+  color: #fff;
+  background: #5f9ea0;
 }
 
 .submit-btn {
@@ -61,17 +68,8 @@ footer {
   background: #5f9ea0;
 }
 
-.units .active {
-  color: #536770;
-  cursor: default;
-}
-
-.units .active:hover {
-  text-decoration: none;
-}
-
 .weather-forecast {
-  margin: 20px 0;
+  margin: 30px 0;
   text-align: center;
 }
 
